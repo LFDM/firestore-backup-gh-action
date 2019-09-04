@@ -14,3 +14,9 @@ inputs:
   collectionIds:
     description: Collection ids to export
     required: false
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "download"
+  color: "orange"
