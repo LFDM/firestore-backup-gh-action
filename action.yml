@@ -1,0 +1,16 @@
+name: Firestore Backup
+author: LFDM <1986gh@gmail.com>
+description: Backup in form of a Firestore export
+inputs:
+  gcloudAuth:
+    description: Base64 encoded gcloud service account
+    required: true
+  projectId:
+    description: Gcloud project id
+    required: true
+  storageBucket:
+    description: Gcloud Storage bucket to store your backup in
+    required: true
+  collectionIds:
+    description: Collection ids to export
+    required: false
