@@ -1,7 +1,7 @@
 
 FROM gcr.io/cloud-builders/gcloud-slim@sha256:122deb6687f687b6f9293e0ab7d1919355bc3dd19cb9be68524d71a69b8bc436
 
-LABEL name="gcloud-auth"
+LABEL name="firestore-backup-gh-action"
 LABEL version="0.0.1"
 LABEL maintainer="LFDM <1986@gmail.com>"
 
