@@ -15,10 +15,10 @@ jobs:
     steps:
       - uses: lfdm/firestore-backup-gh-action
         with:
-          - gcloudAuth: {{ secrets.FIREBASE_BACKUP_GCLOUD_AUTH }}
-          - projectId: firestore-backup-test
-          - storageBucket: gs://firestore-backup-test-backups
-          - collectionIds: users,admins
+          gcloudAuth: ${{ secrets.FIREBASE_BACKUP_GCLOUD_AUTH }}
+          projectId: firestore-backup-test
+          storageBucket: gs://firestore-backup-test-backups
+          collectionIds: users,admins
 
 ```
 
