@@ -6,9 +6,8 @@
 
 ```
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    cron: "0 6 * * *"
 name: Firestore backup
 jobs:
   backup:
@@ -16,7 +15,7 @@ jobs:
     steps:
       - uses: lfdm/firestore-backup-gh-action
         - with:
-          - gcloudAuth: {{ secrets: FIREBASE_BACKUP_GCLOUD_AUTH }}
+          - gcloudAuth: {{ secrets.FIREBASE_BACKUP_GCLOUD_AUTH }}
           - projectId: firestore-backup-test
           - storageBucket: gs://firestore-backup-test-backups
           - collectionIds: users,admins
