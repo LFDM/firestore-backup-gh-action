@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: lfdm/firestore-backup-gh-action
-        - with:
+        with:
           - gcloudAuth: {{ secrets.FIREBASE_BACKUP_GCLOUD_AUTH }}
           - projectId: firestore-backup-test
           - storageBucket: gs://firestore-backup-test-backups
