@@ -10,5 +10,7 @@ LABEL "com.github.actions.description"="Google Action for Firestore backups"
 LABEL "com.github.actions.icon"="log-in"
 LABEL "com.github.actions.color"="orange"
 
+RUN gcloud components install beta
+
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
