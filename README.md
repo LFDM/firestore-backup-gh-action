@@ -1,5 +1,7 @@
 # Github Action for Firestore Backups
 
+Creates backups of your Firestore using [data exports stored in Google Cloud Storage](https://firebase.google.com/docs/firestore/manage-data/export-import).
+
 ## Usage
 
 ### Example workflow file
