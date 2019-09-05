@@ -28,7 +28,7 @@ Only the collections `users` and `admins` will be included in this backup.
 
 ### Inputs
 
-- `gcloudAuth`: base64 encoded service account- ideally stored as a [secret](...) in your repository
+- `gcloudAuth`: Base64 encoded (gcloud service account)[https://cloud.google.com/iam/docs/creating-managing-service-accounts] - ideally stored as a [secret](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables) in your repository. Store the results of `base64 service_account.json` there.
 - `projectId`: Your gcloud project id
 - `storageBucket`: Gcloud Storage bucket to hold our backup
 - `collectionIds`: Optional comma-separated list of collections to be included in the backup. If not specified, all collections will be backed up.
