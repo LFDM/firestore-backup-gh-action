@@ -9,7 +9,7 @@ Creates backups of your Firestore using [data exports stored in Google Cloud Sto
 ```
 on:
   schedule:
-    cron: "0 6 * * *"
+    - cron: "0 6 * * *"
 name: Firestore backup
 jobs:
   backup:
